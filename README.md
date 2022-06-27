@@ -15,7 +15,7 @@
 
 ## el diagrama de la app
 
-![image](/img/diagramaapp.png)
+![image](/img/diagramaplicacion.png)
 
 
 ## Infraestructura empleada:
