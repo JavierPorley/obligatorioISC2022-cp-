@@ -11,27 +11,22 @@
 
 ## Web Online-Boutique.
 
-![This is a alt text.](/OB/online-boutique/src/frontend/static/icons/Hipster_HeroLogoCyan.svg "This is a sample image.")
+![image](/OB/online-boutique/src/frontend/static/icons/Hipster_HeroLogoCyan.svg)
+
 
 ## Infraestructura empleada:
 ### En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
 | Servicios AWS  |    Nombre       |   Archivo asociado   |
 | ---------------|:---------------:|:--------------------:|
 |       VPC      |     ob-vpc      |        vpc.tf        |
-|     Subnet 1   |    ob-sub-1     |        vpc.tf        |
-|     Subnet 2   |    ob-sub-2     |        vpc.tf        |
-|     Subnet 3   |    ob-sub-3     |        vpc.tf        |
-|     Subnet 4   |    ob-sub-4     |        vpc.tf        |
+|   Subnet 1-4   | ob-sub-1, ob-sub-2, ob-sub-3, ob-sub-4 |        vpc.tf        |
 |Internet Gateway|    ob-gw-a      |        vpc.tf        |
-|   Nat Gateway  |                 |                      |
-|                |                 |                      |
-|                |                 |                      |
+|   Nat Gateway  |  eks-nat-gw-private-ab            |        vpc.tf              |
+|  Route Talbe   |ob-route-table-publica, ob-route-table-private          |   vpc.tf                   |
+| Security group |                 |         sg.tf             |
+| ECR Repository |      ob         |         repositorio.tf             |
 |   EKS Cluster  |   EKS_Cluster   |     cluster.tf       |
+| EKS Node Group |                 |       cluster.tf     |
 |   EC2 Instance |    bastion      |     instances.tf     |
-|                |                 |                      |
-|                |                 |                      |
-|                |                 |                      |
-|                |                 |                      |
-|                |                 |                      |
-|                |                 |                      |
-|                |                 |                      |
+
+
