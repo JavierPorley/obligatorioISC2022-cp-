@@ -11,7 +11,11 @@
 
 ## Web Online-Boutique.
 
-![image](/OB/online-boutique/src/frontend/static/icons/Hipster_HeroLogoCyan.svg)
+![image](/OB/online-boutique/src/frontend/static/icons/Hipster_HeroLogoCyan.svg) 
+
+## el diagrama de la app
+
+![image](/img/diagramaapp.png)
 
 
 ## Infraestructura empleada:
