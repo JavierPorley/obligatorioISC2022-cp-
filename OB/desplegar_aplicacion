@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Busco todos los manifestos
+find /home/javier/OB/online-boutique/src/ -name "kubernetes-manifests.yaml" > kbm.manifest
+
+
+#Copio todos los manifestos a la carpeta Deployments
+cont=0
+nombre="kubernetes-manifests_"
+for manifest in `cat kbm.manifest`
+do
+((cont=$cont+1))
+nuevonombre=$nombre$cont
+cp $manifest /home/javier/OB/Deployments/$nuevonombre.yaml
+done
+
+
+#Busco todos los Dockerfiles
+find /home/javier/OB/online-boutique/src/ -name "Dockerfile" > Dockerfiles.txt
+
+AWSAccountID=637775454552
+Zone=us-east-1
+NombreECR=ob
+
+#Creo las imagenes con sus respectivos tags
+for dockerfile in $(cat Dockerfiles.txt)
+do
+docker build -t $AWSAccountID.dkr.ecr.$Zone.amazonaws.com/$NombreECR:$(find $dockerfile -name "Dockerfile" | cut -d "/" -f7) $(dirname $dockerfile)
+done
+
+#Inicio codigo de Terraform
+terraform init
+terraform apply -auto-approve
+

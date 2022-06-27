@@ -1,0 +1,7 @@
+#Configuramos el provider
+
+provider "aws" {
+  region  = var.region
+  profile = var.profile
+}
+
