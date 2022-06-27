@@ -17,10 +17,17 @@
 ### En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
 | Servicios AWS  |    Nombre       |   Archivo asociado   |
 | ---------------|:---------------:|:--------------------:|
-|       VPC      |                 |                      |
-|       IG       |                 |                      |
+|       VPC      |     ob-vpc      |        vpc.tf        |
+|     Subnet 1   |    ob-sub-1     |        vpc.tf        |
+|     Subnet 2   |    ob-sub-2     |        vpc.tf        |
+|     Subnet 3   |    ob-sub-3     |        vpc.tf        |
+|     Subnet 4   |    ob-sub-4     |        vpc.tf        |
+|Internet Gateway|    ob-gw-a      |        vpc.tf        |
+|   Nat Gateway  |                 |                      |
 |                |                 |                      |
 |                |                 |                      |
+|   EKS Cluster  |   EKS_Cluster   |     cluster.tf       |
+|   EC2 Instance |    bastion      |     instances.tf     |
 |                |                 |                      |
 |                |                 |                      |
 |                |                 |                      |
