@@ -11,7 +11,7 @@
 
 ## Web Online-Boutique.
 
-![This is a alt text.](/image/sample.png "This is a sample image.")
+![This is a alt text.](/OB/online-boutique/src/frontend/static/icons/Hipster_HeroLogoCyan.svg "This is a sample image.")
 
 ## Infraestructura empleada:
 ### En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
