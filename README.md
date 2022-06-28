@@ -158,7 +158,7 @@ Apply complete! y Outputs
 
 ![gif](/gif/Final.gif)
 
-Ingreso a la pagina de Online Boutique
+Ingreso a la pagina de Online Boutique mediante external IP.
 
 ![gif](/gif/OnlineBoutique.gif)
 
