@@ -51,11 +51,12 @@
 ## Guia para lograr un despliegue correcto.
 ### A continuacion detallamos el paso a paso para poder desplegar la Web Online Boutique aplicando este repositorio
 ### Entendemos en este punto que los requerimientos detallados anteriormente se cumplen
+### En este repositorio tenemos en la carpeta OB el arbol de la solucion completa con los distintos archivos que sustentan el despliege automatizado de la aplicacion [OB](/OB/)
 
 
 1 - Necesitamos clonar el repositorio como primer paso
 
- `git clone https://github.com/JavierPorley/obligatorioISC2022-cp-.git`
+   `git clone https://github.com/JavierPorley/obligatorioISC2022-cp-.git`
 
 2 - Una vez tengamos el repositorio localmente se necesita modificar varios items en los archivos del repositorio
 
