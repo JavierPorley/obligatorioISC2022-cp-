@@ -101,6 +101,18 @@ Ejemplo en el caso del servicio **adservice** el item imagen quedaria asi substi
 
 **image: 637775454552.dkr.ecr.us-east-1.amazonaws.com/ob:adservice**
 
+3 - El ultimo paso es ejecutar desplegar_aplicacion
+
+`./desplegar_aplicacion`
+
+ A partir de ese momento comenzara el despliegue en forma automatizada de todo lo mostrado hasta el momento.
+ * Realiza una busqueda de todos los manifiestos
+ * Copia esos manifiestos a la carpeta Deployments
+ * Realiza una busqueda de los Dockerfiles
+ * Crea las imagenes con sus respectivos tags
+ * Inicia codigo de terraform
+
+ Es bueno aclarar que este proceso lleva su tiempo el cual se puede estimar aproximadamente en `35 minutos`
 
 
 
