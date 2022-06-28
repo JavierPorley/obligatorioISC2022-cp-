@@ -147,12 +147,19 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
 
 ## Prueba realizada de despliegue.
 Crea las imagenes
- ![gif](/gif/imagenes.gif)
+
+![gif](/gif/imagenes.gif)
+ 
 Terraform apply
- ![gif](/gif/Terraform.gif)
+
+![gif](/gif/Terraform.gif)
+ 
 Apply complete! y Outputs
- ![gif](/gif/Final.gif)
+
+![gif](/gif/Final.gif)
+
 Ingreso a la pagina de Online Boutique
- ![gif](/gif/Online Boutique.gif)
+
+![gif](/gif/OnlineBoutique.gif)
 
  
