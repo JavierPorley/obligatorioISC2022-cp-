@@ -155,6 +155,17 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
  * Realiza una busqueda de los Dockerfiles
  * Crea las imagenes con sus respectivos tags
  * Inicia codigo de terraform
+    
+    * Crea VPC, Subnet, Internet Gateway, Security Group, Nat Gateway, Route Tables.
+    * Crea EKS Cluster con sus nodos.
+    * Crea ECR Repositorio.
+      
+      * Login dentro del Repositorio.
+      * Push de imgenes creadas anteriormente.
+      * Login dentro del Cluster.
+      * Deploy de manifiestos.
+      * Realiza dos replicas del Frontend.
+    
 
  Es bueno aclarar que este proceso lleva su tiempo ya que partimos de cero sin imagenes creadas, etc. Podemos estimar por pruebas realizadas que demora aproximadamente `27 minutos` que se componen de:
  
