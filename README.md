@@ -162,7 +162,7 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/295c57bc0d78edb82ad1
                   
   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L28
    
-   + D) Por ultimo en cada `kubernetes-manifests.yaml` que se encuentra en cada servicio dentro de la carpeta Deployments debe cambiar en el parámetro `image:$AWSAccountID.dkr.ecr.$Region.amazonaws.com/$NombreRepositorio:$tag`
+   + D) Por ultimo se debe modificar los `kubernetes-manifests.yaml` que se encuentran en cada aplicacion dentro de la carpeta Deployments, se debe cambiar el parametro `image:$AWSAccountID.dkr.ecr.$Region.amazonaws.com/$NombreRepositorio:$tag` .
  
 Ejemplo en el caso del servicio **adservice** el item imagen quedaria asi substituyendo el `$AWSAccountID`, `$Region`, `$NombreRepositorio:$tag`:
 
