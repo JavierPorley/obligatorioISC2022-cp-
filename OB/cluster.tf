@@ -5,6 +5,7 @@ resource "aws_eks_cluster" "aws_eks" {
   role_arn = var.iam
   vpc_config {
     subnet_ids = [aws_subnet.sub-1a.id, aws_subnet.sub-1b.id, aws_subnet.sub-1c.id, aws_subnet.sub-1d.id]
+    public_access_cidrs = ["0.0.0.0/0"]
   }
   tags = {
     Name = "EKS_Cluster"
