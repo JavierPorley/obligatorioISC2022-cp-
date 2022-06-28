@@ -19,8 +19,14 @@ Este repositorio contiene lo necesario para que un usuario con ciertos requisito
 
 Es una aplicación de e-commerce donde los usuarios pueden buscar artículos, agregarlos al carrito y comprarlos.
 
-![image](/img/iconoweb.png) 
-![image](/img/online-boutique1img.png)
+<p align="center">
+  <img src=/img/iconoweb.png>
+</p>
+
+<p align="center">
+  <img src=/img/online-boutique1img.png>
+</p>
+
 
 ## Diagrama de APP.
 Está compuesto por 11 microservicios escritos en diferentes idiomas que se comunican entre sí a través de gRPC.
@@ -29,7 +35,9 @@ Estos microservicios tendran asociados **pods** ya que es la manera en la que es
 
 Tambien podemos ver en el diagrama que tenemos un **ELB** el cual toma decisiones de enrutamiento en la capa de aplicación (HTTP/HTTPS).
 
-![image](/img/DiagramaAppimg.png)
+<p align="center">
+  <img src=/img/DiagramaAppimg.png>
+</p>
 
 ## Descripcion de la funsion de cada servicio.
 
@@ -50,7 +58,9 @@ Tambien podemos ver en el diagrama que tenemos un **ELB** el cual toma decisione
 ## Diagrama de Infraestructura planteada.
 El siguiente diagrama muestra la infraestructura necesaria que respalda la solucion propuesta en este oblicagorio.
 
-![image](/img/ObligatorioISC.drawioimg.png)
+<p align="center">
+  <img src=/img/ObligatorioISC.drawioimg.png>
+</p>
 
 ## Infraestructura empleada:
 En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
