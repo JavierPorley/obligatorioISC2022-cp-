@@ -73,7 +73,7 @@
 
                     Deploy de manifests (Ruta local donde este la carpeta Deployments)
                     
-  2. C) desplegar_aplicacion:	Enlace [desplegar_aplicacion](/OB/desplegar_aplicacionf).
+  2. C) desplegar_aplicacion:	Enlace [desplegar_aplicacion](/OB/desplegar_aplicacion).
   
 
 
