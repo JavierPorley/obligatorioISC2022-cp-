@@ -59,7 +59,7 @@
 
 2 - Una vez tengamos el repositorio localmente se necesita modificar varios items en los archivos del repositorio
 
-  2. A) Variable.ft: [variables.tf] (/OB/variables.tf)
+  2. A) Variable.ft: [variables.tf](/OB/variables.tf).
   
                     Cambiar la variable aim por el LabRole que corresponda
                     
