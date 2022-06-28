@@ -49,7 +49,22 @@
 * kubectl instalado
 
 ## Guia para lograr un despliegue correcto.
-1 -
+### A continuacion detallamos el paso a paso para poder desplegar la Web Online Boutique aplicando este repositorio
+### Entendemos en este punto que los requerimientos detallados anteriormente se cumplen
+
+
+1 - Necesitamos clonar el repositorio como primer paso
+
+ `git clone https://github.com/JavierPorley/obligatorioISC2022-cp-.git`
+
+2 - Una vez tengamos el repositorio localmente se necesita modificar varios items en los archivos del repositorio
+
+  2. A) Variable.ft: [variables.tf] (/OB/variables.tf)
+  
+                    Cambiar la variable aim por el LabRole que corresponda
+                    
+                    Cambiar la variable “key name” por la llave de tu aws account
+
 
 
 
