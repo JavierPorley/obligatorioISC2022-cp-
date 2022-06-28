@@ -145,6 +145,7 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
  * 2 minutos Nodos
  * 6 minutos subir imagenes al cluster.
 
+## Prueba realizada de despliegue.
 
  
  
