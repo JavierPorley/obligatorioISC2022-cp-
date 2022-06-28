@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Busco todos los manifestos
-find ./OB/online-boutique/src/ -name "kubernetes-manifests.yaml" > kbm.manifest
+find ./online-boutique/src/ -name "kubernetes-manifests.yaml" > kbm.manifest
 
 
 #Copio todos los manifestos a la carpeta Deployments
@@ -11,12 +11,12 @@ for manifest in `cat kbm.manifest`
 do
 ((cont=$cont+1))
 nuevonombre=$nombre$cont
-cp $manifest ./OB/Deployments/$nuevonombre.yaml
+cp $manifest ./Deployments/$nuevonombre.yaml
 done
 
 
 #Busco todos los Dockerfiles
-find ./OB/online-boutique/src/ -name "Dockerfile" > Dockerfiles.txt
+find ./online-boutique/src/ -name "Dockerfile" > Dockerfiles.txt
 
 AWSAccountID=637775454552
 Zone=us-east-1
