@@ -163,7 +163,7 @@ Ingreso a la pagina de Online Boutique mediante external IP.
 
 ![gif](/gif/OnlineBoutique.gif)
 
-##Algunos tips para considerar.
+## Algunos tips para considerar.
 
 * En caso de necesitar realizar un `terraform destroy` seguramente encotremos un problema ya que terraform no identifica que se ha creado un Load Balancer ya que esto es generado cuando se crea el EKS Cluster, la forma de solucionarlo es eliminarlo de forma manual.
 * 
