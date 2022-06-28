@@ -31,6 +31,22 @@ Tambien podemos ver en el diagrama que tenemos un **ELB** el cual toma decisione
 
 ![image](/img/DiagramaAppimg.png)
 
+## Descripcion de la funsion de cada servicio.
+
+| Servicio  |    Lenguaje       |   Descripcion   |
+| ---------------|:---------------:|:--------------------:|
+|Frontend|Go|Expone un servidor HTTP para servir el sitio web.|
+|Cartservice|C#|Almacena artículos en el carrito de compras del usuario en Redis y los recupera.|
+|Productcatalogservice|Go|Proporciona lista de productos y la capacidad de buscar y obtener productos individuales.|
+|Currencyservice|Node.js|Convierte una cantidad de dinero a otra moneda.|
+|Paymentservice|Node.js|Carga la información de la tarjeta de crédito dada con el monto dado y devuelve una ID de transacción.|
+|Shippingservice|Go|Brinda estimaciones de costos de envío basadas en el carrito de compras.|
+|Emailservice|Python|Envía a los usuarios un correo electrónico de confirmación de pedido.|
+|Checkoutservice|Go|Recupera el carrito del usuario, prepara el pedido y organiza el pago, el envío y la notificación por correo electrónico.|
+|Recommendationservice|Python|Recomienda otros productos en función de lo que se proporciona en el carrito.|
+|Adservice|Java|Proporciona anuncios de texto basados en palabras de contexto dadas.|
+|Loadgenerator|Python/Locust|Envía solicitudes que imitan flujos de compras de usuarios realistas a la interfaz.|
+
 ## Diagrama de Infraestructura planteada.
 El siguiente diagrama muestra la infraestructura necesaria que respalda la solucion propuesta en este oblicagorio.
 
