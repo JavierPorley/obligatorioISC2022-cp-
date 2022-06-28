@@ -15,11 +15,14 @@
 ![image](/img/online-boutique1.png)
 
 ## Diagrama de APP.
-### Online Boutique se compone de 11 servicios que se comunican entre si a traves de los gRPC.
+### Online Boutique se compone de 11 servicios.
 
 ![image](/img/DiagramaApp.png)
 
+## Diagrama de Infraestructura planteada.
+### El siguiente diagrama muestra la infraestructura necesaria que respalda la solucion propuesta en este oblicagorio.
 
+![image](/img/ObligatorioISC.drawio.png)
 
 ## Infraestructura empleada:
 ### En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
