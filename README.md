@@ -63,7 +63,7 @@
   
                     Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
                     
-                    Cambiar la variable “key name” por la llave de tu aws account
+                    Cambiar la variable "key_name" por una llave valida del la aws account del usuario.
 
 
 
