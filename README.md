@@ -88,10 +88,10 @@ En la siguiente tabla se detalla los recursos usados en la solución como tambi�
 ## Requerimientos necesarios para poder desplegar la infraestructura.
 **El usuario deberá tener una cuenta en AWS.**
 * Deberá contar con AWS cli con sus credenciales configuradas.
-* git instalado
-* Terraform instalado
-* docker instalado
-* kubectl instalado
+* git instalado (version 2.25.1)
+* Terraform instalado (Terraform v1.1.9)
+* docker instalado (Version 20.10.16)
+* kubectl instalado (Version 1.22)
 
 ## Guia para lograr un despliegue correcto.
 **A continuacion detallamos el paso a paso para poder desplegar la Web Online Boutique aplicando este repositorio**
