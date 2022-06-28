@@ -51,7 +51,10 @@
 ## Guia para lograr un despliegue correcto.
 ### A continuacion detallamos el paso a paso para poder desplegar la Web Online Boutique aplicando este repositorio
 ### Entendemos en este punto que los requerimientos detallados anteriormente se cumplen
-### En este repositorio tenemos en la carpeta OB el arbol de la solucion completa con los distintos archivos que sustentan el despliege automatizado de la aplicacion [OB](/OB/)
+
+En este repositorio tenemos en la carpeta OB el arbol de la solucion completa con los distintos archivos que sustentan el despliege automatizado de la aplicacion
+
+En el siguiente enlace podemos pararnos en dicha carpeta y recorrer cada uno de los archivos [OB](/OB/)
 
 
 1 - Necesitamos clonar el repositorio como primer paso
@@ -63,7 +66,7 @@
    + A) Variable.ft : Enlace [variables.tf](/OB/variables.tf).
   
             Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
-                    
+                             
             Cambiar la variable "key_name" por una llave valida del la aws account del usuario.
                     
    + B) Deploy.tf :	Enlace [deploy.tf](/OB/deploy.tf).
