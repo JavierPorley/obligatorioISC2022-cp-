@@ -206,3 +206,10 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
 
 `kubectl scale deployment.apps/$aplicacionRequerida --replicas=$Replicas`
 
+## A modo de conclusión:
+### Comentar el plan de trabajo realizado. (Trabajo grupal – Aporte individual)
+
+La forma de trabajo fue reuniéndonos en forma presencial o por Microsoft Team en video llamada, compartiendo pantalla, viendo los distintos temas y realizando los distintos pasos del obligatorio, queremos destacar que cada tarea se trató de hacer en conjunto y en línea.
+
+Se trato generalmente de estar involucrados en todas las tareas del obligatorio y trabajar en conjunto.
+
