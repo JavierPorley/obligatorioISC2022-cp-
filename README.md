@@ -204,5 +204,5 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
 
 * Si necesitas mas replicas de alguna de las aplicaciones debes realizarlo manualmente con el comando: 
 
-`kubectl scale deployment.apps/frontend --replicas=$Replicas`
+`kubectl scale deployment.apps/$aplicacionRequerida --replicas=$Replicas`
 
