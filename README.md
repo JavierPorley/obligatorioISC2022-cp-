@@ -67,16 +67,16 @@ En la siguiente tabla se datalla los recursos usados en la solucion como tambien
 
 | Servicios AWS  |    Nombre       |   Archivo asociado   |
 | ---------------|:---------------:|:--------------------:|
-|       VPC      |     ob-vpc      |        vpc.tf        |
-|   Subnet 1-4   | ob-sub-1, ob-sub-2, ob-sub-3, ob-sub-4 |        vpc.tf        |
-|Internet Gateway|    ob-gw-a      |        vpc.tf        |
-|   Nat Gateway  |  eks-nat-gw-private-ab            |        vpc.tf              |
-|  Route Talbe   |ob-route-table-publica, ob-route-table-private          |   vpc.tf                   |
-| Security group |      permite ssh bastion           |         sg.tf             |
-| ECR Repository |      ob         |         repositorio.tf             |
-|   EKS Cluster  |   EKS_Cluster   |     cluster.tf       |
-| EKS Node Group |       EKS_Node          |       cluster.tf     |
-|   EC2 Instance |    bastion      |     instances.tf     |
+|VPC|ob-vpc|vpc.tf|
+|Subnet 1-4|ob-sub-1, ob-sub-2, ob-sub-3, ob-sub-4|vpc.tf|
+|Internet Gateway|ob-gw-a|vpc.tf|
+|Nat Gateway|eks-nat-gw-private-ab|vpc.tf|
+|Route Talbe|ob-route-table-publica, ob-route-table-private|vpc.tf|
+|Security group|permite ssh bastion|sg.tf|
+|ECR Repository|ob|repositorio.tf|
+|EKS Cluster|EKS_Cluster|cluster.tf|
+|EKS Node Group|EKS_Node|cluster.tf|
+|EC2 Instance|bastion|instances.tf|
 
 ## Requerimientos necesarios para poder desplegar la infraestructura.
 **El usuario debera tener una cuenta en AWS.**
@@ -99,7 +99,10 @@ En la siguiente tabla se datalla los recursos usados en la solucion como tambien
 
    `git clone https://github.com/JavierPorley/obligatorioISC2022-cp-.git`
    
+---      
 :warning: **ATENCION: CAMBIOS A REALIZAR PARA DESPLEGAR DE FORMA EXITOSA** :warning:
+
+---
 
 2 - Una vez tengamos el repositorio localmente se necesita modificar varios items en los archivos del repositorio
 
