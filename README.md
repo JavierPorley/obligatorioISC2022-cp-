@@ -66,57 +66,56 @@ En el siguiente enlace podemos pararnos en dicha carpeta y recorrer cada uno de 
    + A) Variable.ft : Enlace [variables.tf](/OB/variables.tf).
    
   
-            Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
+         Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
             
 https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/295c57bc0d78edb82ad15e03566bb0e4cfa92d87/OB/variables.tf#L58-L59
                            
-            Cambiar la variable "key_name" por una llave valida del la aws account del usuario.
+         Cambiar la variable "key_name" por una llave valida del la aws account del usuario.
  
  https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/variables.tf#L88-L89
  
                     
    + B) Deploy.tf :	Enlace [deploy.tf](/OB/deploy.tf).
    
-            Cambiar el AWSAccountId= (ingresar el del usuario AWS)
+         Cambiar el AWSAccountId= (ingresar el del usuario AWS)
    
    https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/deploy.tf#L10
 
-            Push de imágenes (Ruta local donde este la carpeta SRC de Online-boutique)
+         Push de imágenes (Ruta local donde este la carpeta SRC de Online-boutique)
             
    https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/deploy.tf#L20
 
-            Deploy de manifests (Ruta local donde este la carpeta Deployments)
+         Deploy de manifests (Ruta local donde este la carpeta Deployments)
             
-     https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/deploy.tf#L29
-          
+   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/deploy.tf#L29          
                     
    + C) desplegar_aplicacion :	Enlace [desplegar_aplicacion](/OB/desplegar_aplicacion).
   
-             Item #Busco todos los manifestos
+         Item #Busco todos los manifestos
                
-                  Ruta de manifiestos (Ruta local donde este la carpeta SRC de Online-boutique)
+           Ruta de manifiestos (Ruta local donde este la carpeta SRC de Online-boutique)
                   
   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L4
                          
-             Item #Copio todos los manifestos a la carpeta Deployments
+         Item #Copio todos los manifestos a la carpeta Deployments
                
-                  Ruta local de carpeta Deployments donde se copian los manifiestos
+           Ruta local de carpeta Deployments donde se copian los manifiestos
                   
   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L14
 
-             Item #Busco todos los Dockerfiles
+         Item #Busco todos los Dockerfiles
 
-                  Ruta local dende se encuentra la carpeta scr dentro de online-boutique para que busque los dockerfiles
+           Ruta local dende se encuentra la carpeta scr dentro de online-boutique para que busque los dockerfiles
                   
   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L19
                   
-                  Cambiar AWSAccountID por el del usuario
+         Cambiar AWSAccountID por el del usuario
                   
   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L21
 
-             Item #Creo las imagenes con sus respectivos tags
+         Item #Creo las imagenes con sus respectivos tags
 
-                  Dependiendo de la ruta que contenga Dockerfile.txt es la fila que tiene que tomar cut en este caso en particular -f7.
+           Dependiendo de la ruta que contenga Dockerfile.txt es la fila que tiene que tomar cut en este caso en particular -f7.
                   
   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L28
    
