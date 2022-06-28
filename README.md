@@ -35,6 +35,8 @@ Estos microservicios tendrán asociados **pods** ya que es la manera en la que e
 
 También podemos ver en el diagrama que tenemos un **ELB** el cual toma decisiones de enrutamiento en la capa de aplicación (HTTP/HTTPS).
 
+En el caso del Frontend se decide desplegar mas de un pod con replicaset.
+
 <p align="center">
   <img src=/img/DiagramaAppimg.png>
 </p>
@@ -57,6 +59,11 @@ También podemos ver en el diagrama que tenemos un **ELB** el cual toma decision
 
 ## Diagrama de Infraestructura planteada.
 El siguiente diagrama muestra la infraestructura necesaria que respalda la solución propuesta en este obligatorio.
+Se diseño la solucion creando una VPC con 4 Subnet (2 publicas y 2 privadas) con el fin de obtener tolerancia a fallos.
+Tambien se crea un Internet Gateway para que las Subnet publicas puedan acceder a internet y para el caso de las privadas se crea un NAT Gateway.
+Con dichas Subnets se crea un EKS Cluster y 4 nodos donde se despliega las aplicaciones en base a Pods con sus respectivos servicios.
+En busca de prevenir caidas se crea un Auto Scaling Group que atienda a los cuatro nodos activos.
+En el caso del ELB buscamos distribuir automaticamente el trafico hacia el Frontend.
 
 <p align="center">
   <img src=/img/ObligatorioISC.drawioreadme.png>
@@ -123,44 +130,14 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/295c57bc0d78edb82ad1
          Cambiar el AWSAccountId= (ingresar el del usuario AWS)
    
    https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/deploy.tf#L10
-
-         Push de imágenes (Ruta local donde este la carpeta SRC de Online-boutique)
-            
-   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/deploy.tf#L20
-
-         Deploy de manifests (Ruta local donde este la carpeta Deployments)
-            
-   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/deploy.tf#L29          
+        
                     
    + C) desplegar_aplicacion :	Enlace [desplegar_aplicacion](/OB/desplegar_aplicacion).
-  
-         Item #Busco todos los manifestos
-               
-           Ruta de manifiestos (Ruta local donde este la carpeta SRC de Online-boutique)
-                  
-  https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L4
-                         
-         Item #Copio todos los manifestos a la carpeta Deployments
-               
-           Ruta local de carpeta Deployments donde se copian los manifiestos
-                  
-  https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L14
-
-         Item #Busco todos los Dockerfiles
-
-           Ruta local dende se encuentra la carpeta scr dentro de online-boutique para que busque los dockerfiles
-                  
-  https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L19
-                  
+                                              
          Cambiar AWSAccountID por el del usuario
                   
   https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L21
 
-         Item #Creo las imagenes con sus respectivos tags
-
-           Dependiendo de la ruta que contenga Dockerfile.txt es la fila que tiene que tomar cut en este caso en particular -f7.
-                  
-  https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/desplegar_aplicacion#L28
    
    + D) Por ultimo se debe modificar los `kubernetes-manifests.yaml` que se encuentran en cada aplicacion dentro de la carpeta Deployments, se debe cambiar el parametro `image:$AWSAccountID.dkr.ecr.$Region.amazonaws.com/$NombreRepositorio:$tag` .
  
