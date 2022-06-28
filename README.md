@@ -17,7 +17,7 @@
 ## Diagrama de APP.
 ### Online Boutique se compone de 11 servicios que se comunican entre si a traves de los gRPC.
 
-![image](/img/diagramaplicacion.png)
+![image](/img/DiagramaApp.png)
 
 
 
