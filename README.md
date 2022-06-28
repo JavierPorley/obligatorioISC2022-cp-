@@ -59,7 +59,7 @@ También podemos ver en el diagrama que tenemos un **ELB** el cual toma decision
 El siguiente diagrama muestra la infraestructura necesaria que respalda la solución propuesta en este obligatorio.
 
 <p align="center">
-  <img src=/img/ObligatorioISC.drawioimg.png>
+  <img src=/img/ObligatorioISC.drawioreadme.png>
 </p>
 
 ## Infraestructura empleada:
