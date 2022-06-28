@@ -1,28 +1,6 @@
 #Creamos los Security Groups
 
-resource "aws_security_group" "sg1" {
-  name   = "allow_interno"
-  vpc_id = aws_vpc.vpc1.id
-  ingress {
-    description = "permite ssh"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["192.168.0.0/16"]
-  }
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["192.168.0.0/16"]
-  }
-  tags = {
-    Name = "permite ssh interno"
-  }
-}
-
-
-resource "aws_security_group" "sg2" {
+resource "aws_security_group" "sg_bastion" {
   name   = "allow_bastion"
   vpc_id = aws_vpc.vpc1.id
   ingress {
@@ -30,37 +8,15 @@ resource "aws_security_group" "sg2" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["167.0.0.0/8"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   egress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["167.0.0.0/8"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
     Name = "permite ssh bastion"
   }
 }
-
-resource "aws_security_group" "sg3" {
-  name   = "allow_all"
-  vpc_id = aws_vpc.vpc1.id
-  ingress {
-    description = "permite todo"
-    from_port   = 0
-    to_port     = 0
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-  tags = {
-    Name = "permite todo"
-  }
-}
-
