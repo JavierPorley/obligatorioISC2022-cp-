@@ -12,17 +12,17 @@
 ## Web Online-Boutique.
 
 ![image](/img/iconoweb.png) 
-![image](/img/online-boutique1.png)
+![image](/img/online-boutique1img.png)
 
 ## Diagrama de APP.
 ### Online Boutique se compone de 11 servicios.
 
-![image](/img/DiagramaApp.png)
+![image](/img/DiagramaAppimg.png)
 
 ## Diagrama de Infraestructura planteada.
 ### El siguiente diagrama muestra la infraestructura necesaria que respalda la solucion propuesta en este oblicagorio.
 
-![image](/img/ObligatorioISC.drawio.png)
+![image](/img/ObligatorioISC.drawioimg.png)
 
 ## Infraestructura empleada:
 ### En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
