@@ -34,10 +34,22 @@
 |Internet Gateway|    ob-gw-a      |        vpc.tf        |
 |   Nat Gateway  |  eks-nat-gw-private-ab            |        vpc.tf              |
 |  Route Talbe   |ob-route-table-publica, ob-route-table-private          |   vpc.tf                   |
-| Security group |                 |         sg.tf             |
+| Security group |      permite ssh bastion           |         sg.tf             |
 | ECR Repository |      ob         |         repositorio.tf             |
 |   EKS Cluster  |   EKS_Cluster   |     cluster.tf       |
-| EKS Node Group |                 |       cluster.tf     |
+| EKS Node Group |       EKS_Node          |       cluster.tf     |
 |   EC2 Instance |    bastion      |     instances.tf     |
+
+## Requerimientos necesarios para poder desplegar la infraestructura.
+### El usuario debera tener una cuenta en AWS.
+* Debera contar con AWS cli con sus credenciales configuradas.
+* git instalado
+* Terraform instalado
+* docker instalado
+* kubectl instalado
+
+## Guia para lograr un despliegue correcto.
+1 -
+
 
 
