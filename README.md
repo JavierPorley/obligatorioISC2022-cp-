@@ -69,10 +69,11 @@ En la siguiente tabla se datalla los recursos usados en la solucion como tambien
 
 **En el siguiente enlace podemos pararnos en dicha carpeta y recorrer cada uno de los archivos [OB](/OB/)**
 
-
 1 - Necesitamos clonar el repositorio como primer paso
 
    `git clone https://github.com/JavierPorley/obligatorioISC2022-cp-.git`
+   
+:warning: **ATENCION: CAMBIOS A REALIZAR PARA DESPLEGAR DE FORMA EXITOSA** :warning:
 
 2 - Una vez tengamos el repositorio localmente se necesita modificar varios items en los archivos del repositorio
 
