@@ -3,8 +3,8 @@
 # Materia: Implementación de Soluciones Cloud
 # Evaluación: Obligatorio
 ## Integrantes:
-### Fabian Cabrera (242287)
-### Javier Porley (206109)
+ * **Fabian Cabrera (242287)**
+ * **Javier Porley (206109)**
 ## Objetivo del Obligatorio.
 ### El objetivo del obligatorio es facilitar una solución de infraestructura basada en servicios AWS (Amazon Web Services) que permita mantener la implementación del e-commerce desarrollado por la Empresa.
 ### Este repositorio contiene lo necesario para que un usuario con ciertos requisitos que detallaremos, despliegue de forma automatizada la web Online Boutique realizando una sola acción que es ejecutar `./desplegar_aplicacion`
@@ -161,4 +161,7 @@ Ingreso a la pagina de Online Boutique mediante external IP.
 
 ![gif](/gif/OnlineBoutique.gif)
 
- 
+##Algunos tips para considerar.
+
+* En caso de necesitar realizar un `terraform destroy` seguramente encotremos un problema ya que terraform no identifica que se ha creado un Load Balancer ya que esto es generado cuando se crea el EKS Cluster, la forma de solucionarlo es eliminarlo de forma manual.
+* 
