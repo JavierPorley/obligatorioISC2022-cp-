@@ -29,5 +29,8 @@ resource "aws_eks_node_group" "node" {
     max_size     = var.max
     min_size     = var.min
   }
+  tags = {
+    Name = "EKS_Node"
+  } 
 }
 
