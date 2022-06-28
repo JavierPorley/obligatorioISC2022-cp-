@@ -195,5 +195,8 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
 ## Algunos tips para considerar.
 
 * En caso de necesitar realizar un `terraform destroy` seguramente encontremos un problema ya que terraform no identifica que se ha creado un Load Balancer ya que esto es generado cuando se crea el EKS Cluster, la forma de solucionarlo es eliminarlo de forma manual.
-*
+
+* Si necesitas mas replicas de alguna de las aplicaciones debes realizarlo manualmente con el comando: 
+
+`kubectl scale deployment.apps/frontend --replicas=$Replicas`
 
