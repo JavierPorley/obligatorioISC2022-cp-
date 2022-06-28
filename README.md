@@ -1,13 +1,14 @@
 # Universidad ORT
-# Carrera : Analista en Infraestructura Informática
-# Materia: Implementación de Soluciones Cloud
-# Evaluación: Obligatorio
+## Carrera : Analista en Infraestructura Informática
+## Materia: Implementación de Soluciones Cloud
+## Evaluación: Obligatorio
 ## Integrantes:
- * **Fabian Cabrera (242287)**
- * **Javier Porley (206109)**
+### - Fabian Cabrera (242287)
+### - Javier Porley (206109)
 ## Objetivo del Obligatorio.
-### El objetivo del obligatorio es facilitar una solución de infraestructura basada en servicios AWS (Amazon Web Services) que permita mantener la implementación del e-commerce desarrollado por la Empresa.
-### Este repositorio contiene lo necesario para que un usuario con ciertos requisitos que detallaremos, despliegue de forma automatizada la web Online Boutique realizando una sola acción que es ejecutar `./desplegar_aplicacion`
+El objetivo del obligatorio es facilitar una solución de infraestructura basada en servicios AWS (Amazon Web Services) que permita mantener la implementación del e-commerce desarrollado por la Empresa.
+
+Este repositorio contiene lo necesario para que un usuario con ciertos requisitos que detallaremos, despliegue de forma automatizada la web Online Boutique realizando una sola acción que es ejecutar `./desplegar_aplicacion`
 
 ## Web Online-Boutique.
 
@@ -15,17 +16,17 @@
 ![image](/img/online-boutique1img.png)
 
 ## Diagrama de APP.
-### Online Boutique se compone de 11 servicios.
+Online Boutique se compone de 11 servicios.
 
 ![image](/img/DiagramaAppimg.png)
 
 ## Diagrama de Infraestructura planteada.
-### El siguiente diagrama muestra la infraestructura necesaria que respalda la solucion propuesta en este oblicagorio.
+El siguiente diagrama muestra la infraestructura necesaria que respalda la solucion propuesta en este oblicagorio.
 
 ![image](/img/ObligatorioISC.drawioimg.png)
 
 ## Infraestructura empleada:
-### En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
+En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
 
 | Servicios AWS  |    Nombre       |   Archivo asociado   |
 | ---------------|:---------------:|:--------------------:|
@@ -41,7 +42,7 @@
 |   EC2 Instance |    bastion      |     instances.tf     |
 
 ## Requerimientos necesarios para poder desplegar la infraestructura.
-### El usuario debera tener una cuenta en AWS.
+**El usuario debera tener una cuenta en AWS.**
 * Debera contar con AWS cli con sus credenciales configuradas.
 * git instalado
 * Terraform instalado
@@ -49,12 +50,13 @@
 * kubectl instalado
 
 ## Guia para lograr un despliegue correcto.
-### A continuacion detallamos el paso a paso para poder desplegar la Web Online Boutique aplicando este repositorio
-### Entendemos en este punto que los requerimientos detallados anteriormente se cumplen
+**A continuacion detallamos el paso a paso para poder desplegar la Web Online Boutique aplicando este repositorio**
 
-En este repositorio tenemos en la carpeta OB el arbol de la solucion completa con los distintos archivos que sustentan el despliege automatizado de la aplicacion
+**Entendemos en este punto que los requerimientos detallados anteriormente se cumplen**
 
-En el siguiente enlace podemos pararnos en dicha carpeta y recorrer cada uno de los archivos [OB](/OB/)
+**En este repositorio tenemos en la carpeta OB el arbol de la solucion completa con los distintos archivos que sustentan el despliege automatizado de la aplicacion**
+
+**En el siguiente enlace podemos pararnos en dicha carpeta y recorrer cada uno de los archivos [OB](/OB/)**
 
 
 1 - Necesitamos clonar el repositorio como primer paso
