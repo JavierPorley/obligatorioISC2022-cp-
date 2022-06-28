@@ -1,5 +1,5 @@
 # Universidad ORT
-## Carrera : Analista en Infraestructura Informática
+## Carrera: Analista en Infraestructura Informática
 ## Materia: Implementación de Soluciones Cloud
 ## Evaluación: Obligatorio
 ## Integrantes:
@@ -31,17 +31,17 @@ Es una aplicación de e-commerce donde los usuarios pueden buscar artículos, ag
 ## Diagrama de APP.
 Está compuesto por 11 microservicios escritos en diferentes idiomas que se comunican entre sí a través de gRPC.
 
-Estos microservicios tendran asociados **pods** ya que es la manera en la que este software ejecuta contenedores en una instancia e incluye contenedores y especificaciones sobre almacenamiento, redes y acerca de cómo deben ejecutarse, se puede pensar en un **pod** como un contenedor en ejecución.
+Estos microservicios tendrán asociados **pods** ya que es la manera en la que este software ejecuta contenedores en una instancia e incluye contenedores y especificaciones sobre almacenamiento, redes y acerca de cómo deben ejecutarse, se puede pensar en un **pod** como un contenedor en ejecución.
 
-Tambien podemos ver en el diagrama que tenemos un **ELB** el cual toma decisiones de enrutamiento en la capa de aplicación (HTTP/HTTPS).
+También podemos ver en el diagrama que tenemos un **ELB** el cual toma decisiones de enrutamiento en la capa de aplicación (HTTP/HTTPS).
 
 <p align="center">
   <img src=/img/DiagramaAppimg.png>
 </p>
 
-## Descripcion de la funsion de cada servicio.
+## Descripción de la función de cada servicio.
 
-| Servicio  |    Lenguaje       |   Descripcion   |
+| Servicio  |    Lenguaje       |   Descripción   |
 | ---------------|:---------------:|:--------------------:|
 |Frontend|Go|Expone un servidor HTTP para servir el sitio web.|
 |Cartservice|C#|Almacena artículos en el carrito de compras del usuario en Redis y los recupera.|
@@ -56,14 +56,14 @@ Tambien podemos ver en el diagrama que tenemos un **ELB** el cual toma decisione
 |Loadgenerator|Python/Locust|Envía solicitudes que imitan flujos de compras de usuarios realistas a la interfaz.|
 
 ## Diagrama de Infraestructura planteada.
-El siguiente diagrama muestra la infraestructura necesaria que respalda la solucion propuesta en este oblicagorio.
+El siguiente diagrama muestra la infraestructura necesaria que respalda la solución propuesta en este obligatorio.
 
 <p align="center">
   <img src=/img/ObligatorioISC.drawioimg.png>
 </p>
 
 ## Infraestructura empleada:
-En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
+En la siguiente tabla se detalla los recursos usados en la solución como también el nombre de dicho recurso y el archivo asociado en el repositorio
 
 | Servicios AWS  |    Nombre       |   Archivo asociado   |
 | ---------------|:---------------:|:--------------------:|
@@ -79,8 +79,8 @@ En la siguiente tabla se datalla los recursos usados en la solucion como tambien
 |EC2 Instance|bastion|instances.tf|
 
 ## Requerimientos necesarios para poder desplegar la infraestructura.
-**El usuario debera tener una cuenta en AWS.**
-* Debera contar con AWS cli con sus credenciales configuradas.
+**El usuario deberá tener una cuenta en AWS.**
+* Deberá contar con AWS cli con sus credenciales configuradas.
 * git instalado
 * Terraform instalado
 * docker instalado
@@ -91,7 +91,7 @@ En la siguiente tabla se datalla los recursos usados en la solucion como tambien
 
 **Entendemos en este punto que los requerimientos detallados anteriormente se cumplen**
 
-**En este repositorio tenemos en la carpeta OB el arbol de la solucion completa con los distintos archivos que sustentan el despliege automatizado de la aplicacion**
+**En este repositorio tenemos en la carpeta OB el árbol de la solución completa con los distintos archivos que sustentan el despliegue automatizado de la aplicación**
 
 **En el siguiente enlace podemos pararnos en dicha carpeta y recorrer cada uno de los archivos [OB](/OB/)**
 
@@ -206,5 +206,6 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
 
 ## Algunos tips para considerar.
 
-* En caso de necesitar realizar un `terraform destroy` seguramente encotremos un problema ya que terraform no identifica que se ha creado un Load Balancer ya que esto es generado cuando se crea el EKS Cluster, la forma de solucionarlo es eliminarlo de forma manual.
-* 
+* En caso de necesitar realizar un `terraform destroy` seguramente encontremos un problema ya que terraform no identifica que se ha creado un Load Balancer ya que esto es generado cuando se crea el EKS Cluster, la forma de solucionarlo es eliminarlo de forma manual.
+*
+
