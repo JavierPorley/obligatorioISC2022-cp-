@@ -11,7 +11,7 @@
 
 ## Web Online-Boutique.
 
-![image](/OB/online-boutique/src/frontend/static/icons/Hipster_HeroLogoCyan.svg) 
+![image](/img/iconoweb.png) 
 ![image](/img/online-boutique1.png)
 
 ## Diagrama de APP.
