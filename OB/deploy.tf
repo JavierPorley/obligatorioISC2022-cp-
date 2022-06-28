@@ -17,7 +17,7 @@ direccion_ekr=$AWSAccountId.dkr.ecr.$Region.amazonaws.com/$NombreRepositorio
 aws ecr get-login-password --region $Region | docker login --username AWS --password-stdin $AWSAccountId.dkr.ecr.$Region.amazonaws.com
 
 #Push de imagenes
-for app in $(ls /home/javier/OB/online-boutique/src/)
+for app in $(ls ./OB/online-boutique/src/)
 do
 docker push $direccion_ekr:$app
 done
@@ -26,7 +26,7 @@ done
 aws eks --region $Region update-kubeconfig --name ${aws_eks_cluster.aws_eks.name}
 
 #Deploy de manifests
-kubectl create -f /home/javier/OB/Deployments
+kubectl create -f ./OB/Deployments
 
 #Replicas del frontend
 kubectl scale deployment.apps/frontend --replicas=$Replicas 
