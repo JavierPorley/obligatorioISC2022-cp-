@@ -12,10 +12,13 @@
 ## Web Online-Boutique.
 
 ![image](/OB/online-boutique/src/frontend/static/icons/Hipster_HeroLogoCyan.svg) 
+![image](/img/online-boutique1.png)
 
-## el diagrama de la app
+## Diagrama de APP.
+### Online Boutique se compone de 11 servicios que se comunican entre si a traves de los gRPC.
 
 ![image](/img/diagramaplicacion.png)
+
 
 
 ## Infraestructura empleada:
