@@ -138,4 +138,3 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
  * Inicia codigo de terraform
 
  Es bueno aclarar que este proceso lleva su tiempo el cual se puede estimar aproximadamente en `35 minutos`
-
