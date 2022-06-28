@@ -61,7 +61,7 @@
 
   2. A) Variable.ft: Enlace [variables.tf](/OB/variables.tf).
   
-                    Cambiar la variable aim por el LabRole que corresponda
+                    Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
                     
                     Cambiar la variable “key name” por la llave de tu aws account
 
