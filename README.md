@@ -3,8 +3,11 @@
 ## Materia: Implementación de Soluciones Cloud
 ## Evaluación: Obligatorio
 ## Integrantes:
+---
 ### - Fabian Cabrera (242287)
 ### - Javier Porley (206109)
+
+---
 ## Objetivo del Obligatorio.
 El objetivo del obligatorio es facilitar una solución de infraestructura basada en servicios AWS (Amazon Web Services) que permita mantener la implementación del e-commerce desarrollado por la Empresa.
 
@@ -12,11 +15,19 @@ Este repositorio contiene lo necesario para que un usuario con ciertos requisito
 
 ## Web Online-Boutique.
 
+**Online Boutique** es una aplicación basada en microservicios ubicada en la nube. 
+
+Es una aplicación de e-commerce donde los usuarios pueden buscar artículos, agregarlos al carrito y comprarlos.
+
 ![image](/img/iconoweb.png) 
 ![image](/img/online-boutique1img.png)
 
 ## Diagrama de APP.
-Online Boutique se compone de 11 servicios.
+Está compuesto por 11 microservicios escritos en diferentes idiomas que se comunican entre sí a través de gRPC.
+
+Estos microservicios tendran asociados **pods** ya que es la manera en la que este software ejecuta contenedores en una instancia e incluye contenedores y especificaciones sobre almacenamiento, redes y acerca de cómo deben ejecutarse, se puede pensar en un **pod** como un contenedor en ejecución.
+
+Tambien podemos ver en el diagrama que tenemos un **ELB** el cual toma decisiones de enrutamiento en la capa de aplicación (HTTP/HTTPS).
 
 ![image](/img/DiagramaAppimg.png)
 
