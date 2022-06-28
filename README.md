@@ -64,6 +64,17 @@
                     Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
                     
                     Cambiar la variable "key_name" por una llave valida del la aws account del usuario.
+                    
+  2. B) Deploy.tf:	Enlace [deploy.tf](/OB/deploy.tf).
+            
+                    Cambiar el AWSAccountId= (ingresar el del usuario AWS)
+
+                    Push de imágenes (Ruta local donde este la carpeta SRC de Online-boutique)
+
+                    Deploy de manifests (Ruta local donde este la carpeta Deployments)
+                    
+  2. C) desplegar_aplicacion:	Enlace [desplegar_aplicacion](/OB/desplegar_aplicacionf).
+  
 
 
 
