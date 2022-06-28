@@ -58,11 +58,17 @@ En el caso del Frontend se decide desplegar mas de un pod con replicaset.
 |Loadgenerator|Python/Locust|Envía solicitudes que imitan flujos de compras de usuarios realistas a la interfaz.|
 
 ## Diagrama de Infraestructura planteada.
+
 El siguiente diagrama muestra la infraestructura necesaria que respalda la solución propuesta en este obligatorio.
+
 Se diseño la solucion creando una VPC con 4 Subnet (2 publicas y 2 privadas) con el fin de obtener tolerancia a fallos.
+
 Tambien se crea un Internet Gateway para que las Subnet publicas puedan acceder a internet y para el caso de las privadas se crea un NAT Gateway.
+
 Con dichas Subnets se crea un EKS Cluster y 4 nodos donde se despliega las aplicaciones en base a Pods con sus respectivos servicios.
+
 En busca de prevenir caidas se crea un Auto Scaling Group que atienda a los cuatro nodos activos.
+
 En el caso del ELB buscamos distribuir automaticamente el trafico hacia el Frontend.
 
 <p align="center">
@@ -173,7 +179,7 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
  * 2 minutos de crear, Repositorio, VPC, Subnet, SG, IG, Route Table, bastion, etc.
  * 10 minutos Cluster
  * 2 minutos Nodos
- * 6 minutos subir imagenes al cluster.
+ * 6 minutos subir imagenes al Repositorio.
 
 ## Prueba realizada de despliegue.
 **Crea las imagenes**
