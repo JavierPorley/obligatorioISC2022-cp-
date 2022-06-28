@@ -61,39 +61,39 @@
 
    + A) Variable.ft : Enlace [variables.tf](/OB/variables.tf).
   
-                    Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
+            Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
                     
-                    Cambiar la variable "key_name" por una llave valida del la aws account del usuario.
+            Cambiar la variable "key_name" por una llave valida del la aws account del usuario.
                     
    + B) Deploy.tf :	Enlace [deploy.tf](/OB/deploy.tf).
             
-                    Cambiar el AWSAccountId= (ingresar el del usuario AWS)
+            Cambiar el AWSAccountId= (ingresar el del usuario AWS)
 
-                    Push de imágenes (Ruta local donde este la carpeta SRC de Online-boutique)
+            Push de imágenes (Ruta local donde este la carpeta SRC de Online-boutique)
 
-                    Deploy de manifests (Ruta local donde este la carpeta Deployments)
+            Deploy de manifests (Ruta local donde este la carpeta Deployments)
                     
    + C) desplegar_aplicacion :	Enlace [desplegar_aplicacion](/OB/desplegar_aplicacion).
   
-               Item #Busco todos los manifestos
+             Item #Busco todos los manifestos
                
-                         Ruta de manifiestos (Ruta local donde este la carpeta SRC de Online-boutique)
+                  Ruta de manifiestos (Ruta local donde este la carpeta SRC de Online-boutique)
                          
-                         Cambiar AWSAccountID por el del usuario
+                  Cambiar AWSAccountID por el del usuario
 
-               Item #Copio todos los manifestos a la carpeta Deployments
+             Item #Copio todos los manifestos a la carpeta Deployments
                
-                         Ruta local de carpeta Deployments donde se copian los manifiestos
+                  Ruta local de carpeta Deployments donde se copian los manifiestos
 
-               Item #Busco todos los Dockerfiles
+             Item #Busco todos los Dockerfiles
 
-                         Ruta local dende se encuentra la carpeta scr dentro de online-boutique para que busque los dockerfiles
+                  Ruta local dende se encuentra la carpeta scr dentro de online-boutique para que busque los dockerfiles
 
-               Item #Creo las imagenes con sus respectivos tags
+             Item #Creo las imagenes con sus respectivos tags
 
-                         Dependiendo de la ruta que contenga Dockerfile.txt es la fila que tiene que tomar cut en este caso en particular -f7.
+                  Dependiendo de la ruta que contenga Dockerfile.txt es la fila que tiene que tomar cut en este caso en particular -f7.
  
-                        $(find $dockerfile -name "Dockerfile" | cut -d "/" -f7) $(dirname $dockerfile)
+                  $(find $dockerfile -name "Dockerfile" | cut -d "/" -f7) $(dirname $dockerfile)
    
    + D) Por ultimo en cada `kubernetes-manifests.yaml` que se encuentra en cada servicio dentro de la carpeta Deployments debe cambiar en el parámetro `image:$AWSAccountID.dkr.ecr.$Region.amazonaws.com/$NombreRepositorio:$tag`
  
