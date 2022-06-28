@@ -68,7 +68,7 @@ En el siguiente enlace podemos pararnos en dicha carpeta y recorrer cada uno de 
   
             Cambiar la variable "iam" en default = "arn:aws:iam::AWSAccountId:role/LabRole" por el AWSAccountId que corresponda
             
- https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/745df16e864f010288cc9eb8343984c87043b234/OB/variables.tf#L80-L81
+https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/295c57bc0d78edb82ad15e03566bb0e4cfa92d87/OB/variables.tf#L58-L59
                            
             Cambiar la variable "key_name" por una llave valida del la aws account del usuario.
  
