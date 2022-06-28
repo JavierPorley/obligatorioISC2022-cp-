@@ -97,7 +97,9 @@
    
    + D) Por ultimo en cada `kubernetes-manifests.yaml` que se encuentra en cada servicio dentro de la carpeta Deployments debe cambiar en el parámetro `image:$AWSAccountID.dkr.ecr.$Region.amazonaws.com/$NombreRepositorio:$tag`
  
+Ejemplo en el caso del servicio **adservice** el item imagen quedaria asi substituyendo el `$AWSAccountID`, `$Region`, `$NombreRepositorio:$tag`:
 
+**image: 637775454552.dkr.ecr.us-east-1.amazonaws.com/ob:adservice**
 
 
 
