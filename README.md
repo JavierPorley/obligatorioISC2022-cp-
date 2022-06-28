@@ -137,5 +137,14 @@ https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab97
  * Crea las imagenes con sus respectivos tags
  * Inicia codigo de terraform
 
- Es bueno aclarar que este proceso lleva su tiempo el cual se puede estimar aproximadamente en `35 minutos`
+ Es bueno aclarar que este proceso lleva su tiempo ya que partimos de cero sin imagenes creadas, etc. Podemos estimar por pruebas realizadas que demora aproximadamente `27 minutos` que se componen de:
+ 
+ * 7 minutos de crear imagenes
+ * 2 minutos de crear, Repositorio, VPC, Subnet, SG, IG, Route Table, bastion, etc.
+ * 10 minutos Cluster
+ * 2 minutos Nodos
+ * 6 minutos subir imagenes al cluster.
 
+
+ 
+ 
