@@ -124,7 +124,7 @@ En el siguiente enlace podemos pararnos en dicha carpeta y recorrer cada uno de 
  
 Ejemplo en el caso del servicio **adservice** el item imagen quedaria asi substituyendo el `$AWSAccountID`, `$Region`, `$NombreRepositorio:$tag`:
 
-**image: 637775454552.dkr.ecr.us-east-1.amazonaws.com/ob:adservice**
+https://github.com/JavierPorley/obligatorioISC2022-cp-/blob/a3c37aede1f08c16ab9701711448017f9172a2b3/OB/online-boutique/src/adservice/deployment/kubernetes-manifests.yaml#L19
 
 3 - El ultimo paso es ejecutar desplegar_aplicacion
 
