@@ -26,6 +26,7 @@
 
 ## Infraestructura empleada:
 ### En la siguiente tabla se datalla los recursos usados en la solucion como tambien el nombre de dicho recurso y el archivo asociado en el repositorio
+
 | Servicios AWS  |    Nombre       |   Archivo asociado   |
 | ---------------|:---------------:|:--------------------:|
 |       VPC      |     ob-vpc      |        vpc.tf        |
